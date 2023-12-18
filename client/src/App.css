@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.App {
+  text-align: center;
+}
+.InfoHeader{
+  margin:15px auto 0 auto;
+  width: 80%;
+  
+}
