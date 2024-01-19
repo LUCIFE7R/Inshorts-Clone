@@ -4,7 +4,7 @@ import { getNews } from '../service/api';
 import Article from './Article';
 import InfiniteScroll from "react-infinite-scroll-component"
 function Articles() {
-    const [news,setNews]=useState([]);
+    const [news,setNews]=useState();
     const [page,setPage]=useState(0);
     useEffect(()=>{
         const dailyNews=async()=>{
