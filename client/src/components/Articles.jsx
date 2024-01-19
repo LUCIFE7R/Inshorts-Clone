@@ -13,7 +13,7 @@ function Articles() {
             setNews([...new Set([...news,...response.data])])
         }
         dailyNews();
-    },[page])
+    },[page,news])
     
    
   return (
