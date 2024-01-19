@@ -1,6 +1,5 @@
-import React, { Component } from 'react'
-import { Card,CardContent,Typography,Box,styled,Grid } from '@mui/material'
-import { Description } from '@mui/icons-material'
+import React from 'react'
+import { Card,CardContent,Typography,styled,Grid } from '@mui/material'
 
 const Compnent = styled(Card)`
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
@@ -81,7 +80,7 @@ function Article({article}) {
                 </Author>
                 <Descrption>{article.description}</Descrption>
                 <Publisher>
-                    read more at <a href={article.link} target='_blank'>{article.publisher}</a>
+                    read more at <a href={article.link} target='_blank' rel="noopener noreferrer">{article.publisher}</a>
                 </Publisher>
                 </RightContainer>
                        
